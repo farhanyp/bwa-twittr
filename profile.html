@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="./assets/css/index.css">
+    <link rel="stylesheet" href="./assets/css/profile.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
@@ -57,38 +57,71 @@
                     <img src="/assets/group.svg" alt="" class="w-7 h7">
                     <p class="text-xl">Sign Out</p>
                 </a>
+
+                <div class=" w-[250px]">
+                    <span class="btn-blue cursor-pointer text-base font-bold">New Tweet</span>
+                </div>
+                
             </div>
         </div>
 
         <!-- Feeds -->
         <div class="w-[970px] h-fit border-2 border-line">
-            <div class="flex justify-center gap-[150px] pt-[20px] border-b-2 border-line">
-                <a href="#" class="px-2.5 pb-3.5 text-base font-bold border-b-4 border-link">For You</a>
-                <a href="#" class="px-2.5 pb-3.5 text-base font-bold text-username">Following</a>
-            </div>
+            <div class="relative border-b-2 border-line">
 
-            <div class="bg-primary pt-[20px] pb-[16px] px-4 border-b-2 border-line">
-                <div class="flex items-start justify-start">
-                    <img src="./assets/bwa-profile.png" alt="search" srcset="" class="w-26 h-26 mr-3">
-                    <textarea placeholder="What is happening uy?!" id="search" class="w-full h-[100px] py-3 text-white bg-primary text-base placeholder:text-lg focus:outline-none focus:ring-0 focus:font-semibold resize-none focus:border-transparent overflow-hidden"></textarea>
+                <div class="bg-cover bg-center w-full h-[200px]" style="background-image: url(/assets/cover.png)"></div>
+
+                <div class="absolute pl-5 top-[140px]">
+                    <img src="/assets/logo buildwith angga 1.png" alt="" srcset="" class="w-[120px] h-[120px] rounded-full border-4 border-black">
                 </div>
-                <div class="flex justify-between items-center px-[66px] pt-[17px] w-[484px]">
-                    <div class="flex justify-center items-center gap-2.5 pr-[160px]">
-                        <div class="flex justify-center items-center w-[93px] h-[33px] rounded-full border-line border-2 gap-1.5">
-                            <p>🤩</p>
-                            <p class="text-sm font-semibold">Happy</p>
+
+                <div class="px-5">
+                    <div class="flex flex-col justify-start gap-3.5 px-[5] pt-[70px]">
+                        <div class="flex justify-between items-center">
+                            <div class="">
+                                <h3 class="text-[22px] font-bold">BuildWithAngga <img src="/assets/verify.png" alt="" srcset="" class="inline w-[24] h-[24] rounded-full"></h3>
+                                <p class="text-username text-sm">@buildwithangga</p>
+                            </div>
+                            <span class="btn-white-small cursor-pointer">Follow</span>
                         </div>
-                        <div class="flex justify-center items-center w-[93px] h-[33px] rounded-full border-line border-2 gap-1.5">
-                            <p>😥</p>
-                            <p class="text-sm font-semibold">Sad</p>
+
+                        <p class="text-base">Tempat belajar skills Product Design & Software Development bersama mentor berpengalaman dengan komunitas yang supportive.</p>
+
+                        <div class="flex gap-5">
+                            <div class="flex gap-1.5">
+                                <img src="/assets/briefcase.svg" alt="" srcset="" class="w-[20px] h-[20px]">
+                                <p class="text-base text-username">UX Designer</p>
+                            </div>
+
+                            <div class="flex gap-1.5">
+                                <img src="/assets/location.svg" alt="" srcset="" class="w-[20px] h-[20px]">
+                                <p class="text-base text-username">Indonesia</p>
+                            </div>
                         </div>
-                        <div class="flex justify-center items-center w-[93px] h-[33px] rounded-full border-line border-2 gap-1.5">
-                            <p>🤯</p>
-                            <p class="text-sm font-semibold">Shock</p>
+
+                        <div class="flex gap-5">
+                            <div>
+                                <span class="font-bold text-base">12</span>
+                                <span class="text-base text-username">Following</span>
+                            </div>
+
+                            <div>
+                                <span class="font-bold text-base">18,309</span>
+                                <span class="text-base text-username">Followers</span>
+                            </div>
                         </div>
+
+                        <div class="flex justify-between px-[10px]">
+                            <a href="#" class="px-2.5 pb-3.5 text-base font-bold border-b-4 border-link">Posts</a>
+                            <a href="#" class="px-2.5 pb-3.5 text-base text-username">Replies</a>
+                            <a href="#" class="px-2.5 pb-3.5 text-base text-username">Highlights</a>
+                            <a href="#" class="px-2.5 pb-3.5 text-base text-username">Media</a>
+                            <a href="#" class="px-2.5 pb-3.5 text-base text-username">Likes</a>
+                        </div>
+
                     </div>
-                    <span class="btn-blue cursor-pointer font-bold">Post</span>
                 </div>
+
             </div>
 
             <div class="bg-primary p-4 border-b-2 border-line">
@@ -112,8 +145,12 @@
                 <div class="flex justify-between items-center px-[66px] w-[484px]">
                     <div class="flex justify-center items-center gap-2.5 pr-[250px]">
                         <div class="flex justify-center items-center w-[93px] gap-1.5">
-                            <img src="/assets/heart-fill.svg" alt="heart">
-                            <p class="text-sm font-normal text-like">22 Likes</p>
+                            <img src="/assets/heart.svg" alt="heart">
+                            <p class="text-sm font-normal text-username">394 Likes</p>
+                        </div>
+                        <div class="flex justify-center items-center w-[93px] gap-1.5">
+                            <img src="/assets/trash.svg" alt="heart">
+                            <p class="text-sm font-normal text-username">Delete</p>
                         </div>
                     </div>
                 </div>
@@ -121,13 +158,13 @@
 
             <div class="bg-primary p-4 border-b-2 border-line">
                 <div class="flex items-center justify-start">
-                    <img src="./assets/man2.png" alt="search" srcset="" class="w-26 h-26 mr-3">
+                    <img src="./assets/bwa-profile.png" alt="search" srcset="" class="w-26 h-26 mr-3">
                     <div class="pl-2">
                         <div class="flex gap-1">
-                            <p class="text-base font-bold inline-block">Masayoshi</p>
+                            <p class="text-base font-bold inline-block">BuildWithAngga</p>
                             <img src="/assets/verify.png" alt="" srcset="" class="inline">
                         </div>
-                        <p class="text-username text-sm w-[200px]">@masayoshi • 12 Jan 2024</p>
+                        <p class="text-username text-sm w-[200px]">@bwa • 12 Jan 2024</p>
                     </div>
                     <div class="flex justify-center items-center w-[93px] h-[33px] rounded-full border-line border-2 gap-1.5 ml-[280px]">
                         <p>😥</p>
@@ -145,8 +182,8 @@
                                 <p class="text-sm font-normal text-username">394 Likes</p>
                             </div>
                             <div class="flex justify-center items-center w-[93px] gap-1.5">
-                                <img src="/assets/warning-2.svg" alt="heart">
-                                <p class="text-sm font-normal text-username">Report</p>
+                                <img src="/assets/trash.svg" alt="heart">
+                                <p class="text-sm font-normal text-username">Delete</p>
                             </div>
                         </div>
                     </div>
@@ -155,13 +192,13 @@
 
             <div class="bg-primary p-4 border-b-2 border-line">
                 <div class="flex items-center justify-start">
-                    <img src="./assets/girl3.png" alt="search" srcset="" class="w-26 h-26 mr-3">
+                    <img src="./assets/bwa-profile.png" alt="search" srcset="" class="w-26 h-26 mr-3">
                     <div class="pl-2">
                         <div class="flex gap-1">
-                            <p class="text-base font-bold inline-block">Alqowy</p>
+                            <p class="text-base font-bold inline-block">BuildWithAngga</p>
                             <img src="/assets/verify.png" alt="" srcset="" class="inline">
                         </div>
-                        <p class="text-username text-sm w-[200px]">@alqowy • 12 Jan 2024</p>
+                        <p class="text-username text-sm w-[200px]">@bwa • 12 Jan 2024</p>
                     </div>
                     <div class="flex justify-center items-center w-[93px] h-[33px] rounded-full border-line border-2 gap-1.5 ml-[280px]">
                         <p>🤯</p>
@@ -179,8 +216,8 @@
                                 <p class="text-sm font-normal text-username">394 Likes</p>
                             </div>
                             <div class="flex justify-center items-center w-[93px] gap-1.5">
-                                <img src="/assets/warning-2.svg" alt="heart">
-                                <p class="text-sm font-normal text-username">Report</p>
+                                <img src="/assets/trash.svg" alt="heart">
+                                <p class="text-sm font-normal text-username">Delete</p>
                             </div>
                         </div>
                     </div>
@@ -300,7 +337,7 @@
                             </div>
                             <span class="btn-white-small cursor-pointer">Follow</span>
                         </div>
-
+                        
                         <a href="#" class="text-base font-medium text-link pl-2">Show more</a>
                     </div>
                 </div>
@@ -334,26 +371,6 @@
                                 <div class="pl-2">
                                     <p class="text-username text-sm">3 • Trending</p>
                                     <p class="text-base font-bold">bwa banyak kelas gratis</p>
-                                    <p class="text-username text-sm">14K posts</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-between items-center">
-                            <div class="flex">
-                                <div class="pl-2">
-                                    <p class="text-username text-sm">4 • Trending</p>
-                                    <p class="text-base font-bold">mengapa coding sulit</p>
-                                    <p class="text-username text-sm">14K posts</p>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="flex justify-between items-center">
-                            <div class="flex">
-                                <div class="pl-2">
-                                    <p class="text-username text-sm">5 • Trending</p>
-                                    <p class="text-base font-bold">diskon bwa besar banget</p>
                                     <p class="text-username text-sm">14K posts</p>
                                 </div>
                             </div>
